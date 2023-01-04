@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+
+</head>
+<body>
+
+    <style>
+
+        *{ 
+
+            background-color: rgb(0, 217, 255);
+
+        }
+
+        #texto{ 
+
+            position: relative;
+            top: 110px;
+            left: 530px;
+            font-size: 55px;
+
+        }
+
+        #botao{ 
+
+            position:relative;
+            top: 120px;
+            left: 640px;
+
+            background-color: blue;
+            color: white;
+            font-size: 30px;
+        }
+
+        #botao:hover{ 
+
+            background-color: rgb(83, 83, 159);
+
+        }
+
+        #numero{ 
+
+            position: relative;
+            left: 690px;
+            top: 100px;
+            font-size: 50px;
+        }
+
+
+
+    </style>
+
+
+    
+    <p id="texto">Número da sorte: </p>
+    <p id="numero"></p>
+
+    <button id = "botao" onclick="botao()">Aperte aqui</button>
+
+
+    <script>
+
+      
+
+
+        function botao(){ 
+
+            a = Math.floor(Math.random() * 50) 
+            console.log(a)
+
+            
+           switch (a) {
+            case 0:
+                
+            if (a=0){
+            document.getElementById("texto").style.color="blue";
+            document.getElementById("numero").innerHTML= a;
+                a++
+            }
+                break;
+           
+            case 1:
+
+            document.getElementById("texto").style.color="white";
+            document.getElementById("numero").innerHTML= a;
+
+
+            break;
+            
+            case 2:
+
+            document.getElementById("texto").style.color="red";
+            document.getElementById("numero").innerHTML= a;
+
+
+            break;
+
+            default:
+            document.getElementById("numero").innerHTML= a;
+                break;
+           }
+
+
+
+
+        }
+
+
+        
+
+        
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
